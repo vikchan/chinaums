@@ -43,10 +43,10 @@ class Base
             $sign = $this->generateSign($data);
             $gateway  = $this->config['gateway'] . $this->api;
             $data = json_encode($data);
-            if ('cli' == php_sapi_name()) {
-                echo 'api:' . $gateway . PHP_EOL;
-                echo 'request:' . $data . PHP_EOL;
-            }
+            // if ('cli' == php_sapi_name()) {
+            //     echo 'api:' . $gateway . PHP_EOL;
+            //     echo 'request:' . $data . PHP_EOL;
+            // }
             $headers = [
                 'Content-Type: application/json',
                 'Content-Length: ' . strlen($data),
