@@ -1,5 +1,5 @@
 {
-    "name": "morton/chinaums",
+    "name": "vikchan/chinaums",
     "description": "一个银联商务sdk扩展包",
     "keywords": ["chinaums","alipay", "wechat", "pay"],
     "type": "library",
