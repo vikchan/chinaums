@@ -60,13 +60,13 @@ class Base
             $des = new DES($key, $method, DES::OUTPUT_HEX);
             // 加密
             $str = $des->encrypt($data);
-            if ('cli' == php_sapi_name()) {
-                echo 'api:' . $gateway . PHP_EOL;
-                echo 'request:' . $data . PHP_EOL;
-            }
-            $headers = [
-                'Content-Type: application/json',
-            ];
+            // if ('cli' == php_sapi_name()) {
+            //     echo 'api:' . $gateway . PHP_EOL;
+            //     echo 'request:' . $data . PHP_EOL;
+            // }
+            // $headers = [
+            //     'Content-Type: application/json',
+            // ];
             $headers = $headers;
             $options = [
                 CURLOPT_HTTPHEADER => $headers,
